@@ -1,0 +1,14 @@
+{
+  "name": "nodetemp",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.3",
+    "mongoose": "^6.9.0",
+    "morgan": "^1.10.0"
+  }
+}
