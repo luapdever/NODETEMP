@@ -6,7 +6,7 @@ exports.json_res = (
   error = null
 ) => {
   return res.status(status).send({
-    success: status >= 200 && success < 300 ? true : false,
+    success: status >= 200 && status < 300 ? true : false,
     message,
     data,
     error,
