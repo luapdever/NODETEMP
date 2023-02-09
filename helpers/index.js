@@ -1,8 +1,14 @@
 exports.json_res = (
-  success = true,
+  res,
   message = "",
+  status = 200,
   data = null,
   error = null
 ) => {
-  return { success, message, data, error };
+  return res.status(status).send({
+    success: status >= 200 && success < 300 ? true : false,
+    message,
+    data,
+    error,
+  });
 };
